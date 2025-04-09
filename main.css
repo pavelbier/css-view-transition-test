@@ -1,0 +1,107 @@
+@view-transition {
+	navigation: auto;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	background-color: #fff;
+	font-family: sans-serif;
+}
+
+body > h1 {
+	font-size: 4rem;
+}
+
+
+a {
+	color: #303030;
+	text-decoration: underline;
+}
+
+a:is(:hover,:focus,:active) {
+	text-decoration: none;
+}
+
+main {
+	max-width: min-content;
+	align-self: center;
+	margin: 50px 0 0 0;	
+}
+
+.main-page .posts {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
+}
+
+.posts .post {
+	padding: 1rem;
+	background-color: #ccc;
+	border-radius: 0.5rem;
+}
+
+.posts .post h1 {
+	font-size: 2rem;
+	margin: 0;	
+}
+
+.posts .post .text {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	line-clamp: 4; 
+	-webkit-box-orient: vertical;
+}
+
+.detail-post {
+	background-color: #ccc;
+	padding: 2rem;
+	border-radius: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 320px;
+	gap: 1rem;
+}
+
+.detail-post .main-post {
+
+}
+
+.detail-post .main-post h1 {
+	margin: 0 0 1rem 0;
+	font-size: 3rem;
+}
+
+.detail-post .text {
+	margin: 1rem 0
+}
+
+.bottom-controls {
+	padding: 1rem;
+	text-align: center
+}
+
+div[data-post="first"] {
+	view-transition-name: first-post;
+}
+
+div[data-post="second"] {
+	view-transition-name: second-post;
+}
+
+div[data-post="third"] {
+	view-transition-name: third-post;
+}
+
+div[data-post="fourth"] {
+	view-transition-name: fourth-post;
+}
+
+div[data-post="fifth"] {
+	view-transition-name: fifth-post;
+}
+
+div[data-post="sixth"] {
+	view-transition-name: sixth-post;
+}
+
